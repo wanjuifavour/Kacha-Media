@@ -69,7 +69,7 @@ export default function ServicesPage() {
                   <div className="p-4 bg-amber-50 dark:bg-amber-950 rounded-lg">
                     <h4 className="font-semibold text-stone-900 dark:text-stone-100 mb-2">SME Brand Videos</h4>
                     <p className="text-sm text-stone-600 dark:text-stone-400">
-                      "Brand Hero" videos that tell your business story
+                      &quot;Brand Hero&quot; videos that tell your business story
                     </p>
                   </div>
                   <div className="p-4 bg-amber-50 dark:bg-amber-950 rounded-lg">
@@ -184,7 +184,7 @@ export default function ServicesPage() {
                   <div className="p-4 bg-orange-50 dark:bg-orange-950 rounded-lg">
                     <h4 className="font-semibold text-stone-900 dark:text-stone-100 mb-2">Brand Positioning</h4>
                     <p className="text-sm text-stone-600 dark:text-stone-400">
-                      Position your brand as "Africa's Authentic Storyteller"
+                      Position your brand as &quot;Africa&apos;s Authentic Storyteller&quot;
                     </p>
                   </div>
                   <div className="p-4 bg-orange-50 dark:bg-orange-950 rounded-lg">
@@ -253,7 +253,7 @@ export default function ServicesPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-4">Service Packages</h2>
             <p className="text-xl text-stone-600 dark:text-stone-400 max-w-3xl mx-auto">
-              Choose the perfect package for your brand's needs, or let us create a custom solution.
+              Choose the perfect package for your brand&apos;s needs, or let us create a custom solution.
             </p>
           </div>
 
@@ -341,7 +341,7 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Ready to Elevate Your Brand?</h2>
           <p className="text-xl text-amber-100 mb-8">
-            Let's discuss which services and packages align with your brand goals and budget.
+            Let&apos;s discuss which services and packages align with your brand goals and budget.
           </p>
           <Link href="/booking">
             <Button size="lg" className="bg-white text-amber-700 hover:bg-amber-50">

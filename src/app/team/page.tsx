@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Camera, BarChart3, Users, Award, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import NavigationHeader from "@/components/ui/navigation-header"
 
 export default function TeamPage() {
@@ -164,9 +165,11 @@ export default function TeamPage() {
                 <CardContent className="p-0">
                   <div className="grid md:grid-cols-2">
                     <div className="relative">
-                      <img
+                      <Image
                         src={leader.image || "/placeholder.svg"}
                         alt={leader.name}
+                        width={400}
+                        height={300}
                         className="w-full h-full object-cover min-h-[300px]"
                       />
                       <div className="absolute top-4 left-4">
@@ -253,9 +256,11 @@ export default function TeamPage() {
               >
                 <CardContent className="p-6">
                   <div className="relative mb-6">
-                    <img
+                    <Image
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}
+                      width={96}
+                      height={96}
                       className="w-24 h-24 rounded-full mx-auto object-cover"
                     />
                     <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
@@ -316,9 +321,11 @@ export default function TeamPage() {
               >
                 <CardContent className="p-6">
                   <div className="relative mb-6">
-                    <img
+                    <Image
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}
+                      width={96}
+                      height={96}
                       className="w-24 h-24 rounded-full mx-auto object-cover"
                     />
                     <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
@@ -364,7 +371,7 @@ export default function TeamPage() {
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Join Our Growing Team</h2>
           <p className="text-xl text-amber-100 mb-8">
-            We're always looking for passionate storytellers, creative technologists, and strategic minds to join our
+            We&apos;re always looking for passionate storytellers, creative technologists, and strategic minds to join our
             mission of revolutionizing African brand storytelling.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

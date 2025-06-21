@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Play, ExternalLink, Award, Users, ArrowRight } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import NavigationHeader from "@/components/ui/navigation-header"
 
 export default function PortfolioPage() {
@@ -144,9 +145,11 @@ export default function PortfolioPage() {
                 className="border-amber-200 dark:border-amber-800 overflow-hidden group hover:shadow-xl transition-all duration-300"
               >
                 <div className="relative">
-                  <img
+                  <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
+                    width={600}
+                    height={256}
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -264,7 +267,7 @@ export default function PortfolioPage() {
             Ready to Create Your Success Story?
           </h2>
           <p className="text-xl text-stone-600 dark:text-stone-400 mb-8">
-            Let's discuss how we can help your brand achieve similar results with authentic storytelling and strategic
+            Let&apos;s discuss how we can help your brand achieve similar results with authentic storytelling and strategic
             innovation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

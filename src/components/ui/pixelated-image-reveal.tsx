@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect, useRef, useCallback } from 'react';
-import gsap from 'gsap';
+import React, { useEffect, useRef, useCallback } from 'react';
+import { gsap } from 'gsap';
+import Image from 'next/image';
 
 type PixelatedImageRevealProps = {
     defaultImg: string;
@@ -40,7 +41,7 @@ export default function PixelatedImageReveal({
 
     // Detect touch device once
     useEffect(() => {
-        isTouchDeviceRef.current = 
+        isTouchDeviceRef.current =
             'ontouchstart' in window ||
             navigator.maxTouchPoints > 0 ||
             window.matchMedia('(pointer: coarse)').matches;
@@ -61,7 +62,7 @@ export default function PixelatedImageReveal({
             for (let col = 0; col < gridSize; col++) {
                 const pixel = document.createElement('div');
                 pixel.className = 'pixelated-image-card__pixel';
-                
+
                 // Use CSS custom properties for better performance
                 pixel.style.cssText = `
                     position: absolute;
@@ -73,7 +74,7 @@ export default function PixelatedImageReveal({
                     display: none;
                     will-change: display;
                 `;
-                
+
                 pixelsRef.current.push(pixel);
                 fragment.appendChild(pixel);
             }
@@ -113,27 +114,27 @@ export default function PixelatedImageReveal({
                 from: staggerFrom,
             },
         })
-        // Show/hide the reveal image
-        .call(() => {
-            if (activeCardRef.current) {
-                activeCardRef.current.style.display = activate ? 'block' : 'none';
-            }
-            // Call callbacks
-            if (activate && !wasActive && onReveal) {
-                onReveal();
-            } else if (!activate && wasActive && onHide) {
-                onHide();
-            }
-        }, [], animationDuration)
-        // Animate pixels disappearing
-        .to(pixelsRef.current, {
-            display: 'none',
-            duration: 0,
-            stagger: {
-                each: staggerDuration,
-                from: staggerFrom,
-            },
-        }, animationDuration);
+            // Show/hide the reveal image
+            .call(() => {
+                if (activeCardRef.current) {
+                    activeCardRef.current.style.display = activate ? 'block' : 'none';
+                }
+                // Call callbacks
+                if (activate && !wasActive && onReveal) {
+                    onReveal();
+                } else if (!activate && wasActive && onHide) {
+                    onHide();
+                }
+            }, [], animationDuration)
+            // Animate pixels disappearing
+            .to(pixelsRef.current, {
+                display: 'none',
+                duration: 0,
+                stagger: {
+                    each: staggerDuration,
+                    from: staggerFrom,
+                },
+            }, animationDuration);
 
     }, [disabled, animationDuration, staggerFrom, onReveal, onHide]);
 
@@ -178,12 +179,12 @@ export default function PixelatedImageReveal({
                 container.removeEventListener('mouseenter', handleMouseEnter);
                 container.removeEventListener('mouseleave', handleMouseLeave);
             }
-            
+
             // Kill any running animations
             if (timelineRef.current) {
                 timelineRef.current.kill();
             }
-            
+
             // Clean up pixels
             pixelsRef.current.forEach(pixel => pixel.remove());
             pixelsRef.current = [];
@@ -198,9 +199,8 @@ export default function PixelatedImageReveal({
     return (
         <div
             ref={containerRef}
-            className={`relative w-full max-w-md aspect-square rounded-lg overflow-hidden bg-neutral-800 text-primary dark:bg-neutral-900 ${
-                disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'
-            } ${className}`}
+            className={`relative w-full max-w-md aspect-square rounded-lg overflow-hidden bg-neutral-800 text-primary dark:bg-neutral-900 ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'
+                } ${className}`}
             role="button"
             tabIndex={disabled ? -1 : 0}
             aria-label={`Interactive image reveal: ${alt}`}
@@ -213,22 +213,26 @@ export default function PixelatedImageReveal({
         >
             {/* Default image */}
             <div className="absolute inset-0">
-                <img
+                <Image
                     src={defaultImg}
                     alt={alt}
+                    width={400}
+                    height={400}
                     className="w-full h-full object-cover"
                     loading="lazy"
                 />
             </div>
 
             {/* Reveal image */}
-            <div 
+            <div
                 ref={activeCardRef}
                 className="absolute inset-0 hidden"
             >
-                <img
+                <Image
                     src={revealImg}
                     alt={alt}
+                    width={400}
+                    height={400}
                     className="w-full h-full object-cover"
                     loading="lazy"
                 />

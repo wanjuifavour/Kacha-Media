@@ -17,7 +17,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <Badge className="mb-4 bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200">
-                Africa's Authentic Storyteller
+                Africa&apos;s Authentic Storyteller
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold text-stone-900 dark:text-stone-100 mb-6">
                 Revolutionizing African{" "}
@@ -105,7 +105,7 @@ export default function HomePage() {
                     <h4 className="font-semibold text-stone-900 dark:text-stone-100 mb-2">Digital Media Branch</h4>
                     <ul className="text-stone-600 dark:text-stone-400 space-y-1">
                       <li>• Emotion-driven wedding films</li>
-                      <li>• SME "Brand Hero" videos</li>
+                      <li>• SME &quot;Brand Hero&quot; videos</li>
                       <li>• Documentary projects</li>
                       <li>• AI-powered post-production</li>
                     </ul>
@@ -201,7 +201,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Ready to Tell Your Story?</h2>
           <p className="text-xl text-stone-300 mb-8">
-            Let's create something extraordinary together. Book a consultation and discover how we can elevate your
+            Let&apos;s create something extraordinary together. Book a consultation and discover how we can elevate your
             brand.
           </p>
           <Link href="/booking">
@@ -225,7 +225,7 @@ export default function HomePage() {
                 <span className="text-xl font-bold">Kacha Media</span>
               </div>
               <p className="text-stone-400">
-                Africa's premier digital branding company, revolutionizing storytelling through technology.
+                Africa&apos;s premier digital branding company, revolutionizing storytelling through technology.
               </p>
             </div>
             <div>

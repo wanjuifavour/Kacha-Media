@@ -24,7 +24,7 @@ export default function AboutPage() {
               </span>
             </h1>
             <p className="text-xl text-stone-600 dark:text-stone-400 max-w-3xl mx-auto">
-              We're not just another media company. We're storytellers, innovators, and brand architects dedicated to
+              We&apos;re not just another media company. We&apos;re storytellers, innovators, and brand architects dedicated to
               revolutionizing how African brands connect with their audiences.
             </p>
           </div>
@@ -44,8 +44,8 @@ export default function AboutPage() {
                   <h2 className="text-2xl font-bold text-stone-900 dark:text-stone-100">Our Vision</h2>
                 </div>
                 <p className="text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
-                  "To revolutionize African brand storytelling by merging cutting-edge technology with authentic
-                  narratives, ensuring every visual resonates deeply with its audience."
+                  &quot;To revolutionize African brand storytelling by merging cutting-edge technology with authentic
+                  narratives, ensuring every visual resonates deeply with its audience.&quot;
                 </p>
               </CardContent>
             </Card>
@@ -59,7 +59,7 @@ export default function AboutPage() {
                   <h2 className="text-2xl font-bold text-stone-900 dark:text-stone-100">Our Mission</h2>
                 </div>
                 <p className="text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
-                  "To deliver unparalleled media quality—one frame, one story, one connection at a time."
+                  &quot;To deliver unparalleled media quality—one frame, one story, one connection at a time.&quot;
                 </p>
               </CardContent>
             </Card>
@@ -237,7 +237,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Ready to Work With Us?</h2>
           <p className="text-xl text-amber-100 mb-8">
-            Let's discuss how our unique approach can elevate your brand and tell your story authentically.
+            Let&apos;s discuss how our unique approach can elevate your brand and tell your story authentically.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/booking">

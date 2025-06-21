@@ -92,15 +92,15 @@ Kacha Media is a full-service creative agency that revolutionizes African brand 
    ```
 
 3. **Run the development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
-   # or
-   bun dev
-   ```
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
 4. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)

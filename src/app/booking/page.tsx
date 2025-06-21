@@ -67,7 +67,7 @@ export default function BookingPage() {
               Book Your Consultation
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-stone-900 dark:text-stone-100 mb-6">
-              Let's Create Your{" "}
+              Let&apos;s Create Your{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">
                 Brand Story
               </span>
@@ -352,8 +352,8 @@ export default function BookingPage() {
                       <span className="text-white font-bold">JM</span>
                     </div>
                     <blockquote className="text-stone-700 dark:text-stone-300 mb-4">
-                      "Kacha Media transformed our brand story completely. Their authentic approach and cutting-edge
-                      technology delivered results beyond our expectations."
+                      &quot;Kacha Media transformed our brand story completely. Their authentic approach and cutting-edge
+                      technology delivered results beyond our expectations.&quot;
                     </blockquote>
                     <cite className="text-sm font-medium text-amber-700 dark:text-amber-400">
                       - Jane Mwangi, CEO, Savanna Ventures

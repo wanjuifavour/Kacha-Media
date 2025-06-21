@@ -52,13 +52,13 @@ export default function ContactPage() {
               Get In Touch
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-stone-900 dark:text-stone-100 mb-6">
-              Let's Start a{" "}
+              Let&apos;s Start a{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">
                 Conversation
               </span>
             </h1>
             <p className="text-xl text-stone-600 dark:text-stone-400 max-w-3xl mx-auto">
-              Ready to transform your brand story? We'd love to hear from you. Reach out to discuss your project, ask
+              Ready to transform your brand story? We&apos;d love to hear from you. Reach out to discuss your project, ask
               questions, or explore partnership opportunities.
             </p>
           </div>
@@ -313,7 +313,7 @@ export default function ContactPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-4">Visit Our Office</h2>
             <p className="text-xl text-stone-600 dark:text-stone-400">
-              Located in the heart of Nairobi's business district
+              Located in the heart of Nairobi&apos;s business district
             </p>
           </div>
 
@@ -341,11 +341,11 @@ export default function ContactPage() {
             <Card className="border-amber-200 dark:border-amber-800">
               <CardContent className="p-6">
                 <h3 className="font-bold text-stone-900 dark:text-stone-100 mb-2">
-                  What's the typical timeline for a project?
+                  What&apos;s the typical timeline for a project?
                 </h3>
                 <p className="text-stone-600 dark:text-stone-400">
                   Project timelines vary based on scope and complexity. Simple brand videos typically take 2-3 weeks,
-                  while comprehensive campaigns can take 6-12 weeks. We'll provide a detailed timeline during your
+                  while comprehensive campaigns can take 6-12 weeks. We&apos;ll provide a detailed timeline during your
                   consultation.
                 </p>
               </CardContent>
@@ -357,7 +357,7 @@ export default function ContactPage() {
                   Do you work with international clients?
                 </h3>
                 <p className="text-stone-600 dark:text-stone-400">
-                  Yes! While we're based in Kenya, we work with clients across Africa and internationally. We can manage
+                  Yes! While we&apos;re based in Kenya, we work with clients across Africa and internationally. We can manage
                   projects remotely and travel for on-location shoots when needed.
                 </p>
               </CardContent>
